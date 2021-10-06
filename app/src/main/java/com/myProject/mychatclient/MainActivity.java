@@ -10,6 +10,7 @@ import tech.gusavila92.websocketclient.WebSocketClient;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
          createWebSocketClient();
+        new Scanner(System.in);
     }
 
     private void createWebSocketClient(){
